@@ -16,10 +16,10 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
             <a class="navbar-brand">
-                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-instagram pb-4"></i>
                 Instagram
             </a>
-            <div class="d-flex justify-content-end">
+            <div class="d-flex justify-content-end py-1">
                 <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal"
                     data-bs-whatever="@mdo">Create a new post</button>
 
@@ -73,48 +73,150 @@
             </div>
         </div>
     </nav>
-    <div class="container">
-        <ul class="nav nav-tabs justify-content-center">
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html">
-                    <i class="fa-solid fa-table-cells"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="./SubPage/imagesuno.html">
-                    <i class="fa-solid fa-square"></i>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-sm-6 col-md-4 p-1">
-                <img src="https://picsum.photos/375?random=1" alt="Imagen 1" class="w-100">
+
+    <nav>
+        <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
+                type="button" role="tab" aria-controls="nav-home" aria-selected="true"><i
+                    class="fa-solid fa-table-cells"></i></button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false"><i
+                    class="fa-solid fa-square"></i></button>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab"
+            tabindex="0">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-4 p-1">
+                        <img src="https://picsum.photos/350?random=1" alt="Imagen 1" class="w-100">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 p-1">
+                        <img src="https://picsum.photos/350?random=2" alt="Imagen 2" class="w-100">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 p-1">
+                        <img src="https://picsum.photos/350?random=3" alt="Imagen 3" class="w-100">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 p-1">
+                        <img src="https://picsum.photos/350?random=4" alt="Imagen 4" class="w-100">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 p-1">
+                        <img src="https://picsum.photos/350?random=5" alt="Imagen 5" class="w-100">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 p-1">
+                        <img src="https://picsum.photos/350?random=6" alt="Imagen 6" class="w-100">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 p-1">
+                        <img src="https://picsum.photos/350?random=7" alt="Imagen 7" class="w-100">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 p-1">
+                        <img src="https://picsum.photos/350?random=8" alt="Imagen 8" class="w-100">
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 p-1">
+                        <img src="https://picsum.photos/350?random=9" alt="Imagen 9" class="w-100">
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 p-1">
-                <img src="https://picsum.photos/375?random=2" alt="Imagen 2" class="w-100">
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 p-1">
-                <img src="https://picsum.photos/375?random=3" alt="Imagen 3" class="w-100">
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 p-1">
-                <img src="https://picsum.photos/350?random=4" alt="Imagen 4" class="w-100">
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 p-1">
-                <img src="https://picsum.photos/350?random=5" alt="Imagen 5" class="w-100">
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 p-1">
-                <img src="https://picsum.photos/350?random=6" alt="Imagen 6" class="w-100">
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 p-1">
-                <img src="https://picsum.photos/350?random=7" alt="Imagen 7" class="w-100">
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 p-1">
-                <img src="https://picsum.photos/350?random=8" alt="Imagen 8" class="w-100">
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 p-1">
-                <img src="https://picsum.photos/350?random=9" alt="Imagen 9" class="w-100">
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+            <div class="container-fluid d-flex flex-column align-items-center">
+                <div class="card mb-2">
+                    <div class="card-body pb-0 d-flex">
+                        <h6 class="card-text fw-bold"> EL UNIVERSO 1 </h6>
+                        <p class="text-end ms-auto me-3 fs-6 fw-light">12/19</p>
+                    </div>
+                    <img class="card-img-top img-fluid rounded-0" src="https://picsum.photos/200?random=10" alt="...">
+                    <div class="card-footer py-3 pb-0">
+                        <b class="">200 Likes</b>
+                        <p class="text-wrap fw-light">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body pb-0 d-flex">
+                        <h6 class="card-text fw-bold"> EL UNIVERSO 1 </h6>
+                        <p class="text-end ms-auto me-3 fs-6 fw-light">12/19</p>
+                    </div>
+                    <img class="card-img-top img-fluid rounded-0" src="https://picsum.photos/200?random=11" alt="...">
+                    <div class="card-body py-3 pb-0">
+                        <b class="">200 Likes</b>
+                        <p class="text-wrap fw-light">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body pb-0 d-flex">
+                        <h6 class="card-text fw-bold"> EL UNIVERSO 1 </h6>
+                        <p class="text-end ms-auto me-3 fs-6 fw-light">12/19</p>
+                    </div>
+                    <img class="card-img-top img-fluid rounded-0" src="https://picsum.photos/200?random=12" alt="...">
+                    <div class="card-body py-3 pb-0">
+                        <b class="">200 Likes</b>
+                        <p class="text-wrap fw-light">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body pb-0 d-flex">
+                        <h6 class="card-text fw-bold"> EL UNIVERSO 1 </h6>
+                        <p class="text-end ms-auto me-3 fs-6 fw-light">12/19</p>
+                    </div>
+                    <img class="card-img-top img-fluid rounded-0" src="https://picsum.photos/200?random=13" alt="...">
+                    <div class="card-body py-3 pb-0">
+                        <b class="">200 Likes</b>
+                        <p class="text-wrap fw-light">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body pb-0 d-flex">
+                        <h6 class="card-text fw-bold"> EL UNIVERSO 1 </h6>
+                        <p class="text-end ms-auto me-3 fs-6 fw-light">12/19</p>
+                    </div>
+                    <img class="card-img-top img-fluid rounded-0" src="https://picsum.photos/200?random=14" alt="...">
+                    <div class="card-body py-3 pb-0">
+                        <b class="">200 Likes</b>
+                        <p class="text-wrap fw-light">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body pb-0 d-flex">
+                        <h6 class="card-text fw-bold"> EL UNIVERSO 1 </h6>
+                        <p class="text-end ms-auto me-3 fs-6 fw-light">12/19</p>
+                    </div>
+                    <img class="card-img-top img-fluid rounded-0" src="https://picsum.photos/200?random=15" alt="...">
+                    <div class="card-body py-3 pb-0">
+                        <b class="">200 Likes</b>
+                        <p class="text-wrap fw-light">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body pb-0 d-flex">
+                        <h6 class="card-text fw-bold"> EL UNIVERSO 1 </h6>
+                        <p class="text-end ms-auto me-3 fs-6 fw-light">12/19</p>
+                    </div>
+                    <img class="card-img-top img-fluid rounded-0" src="https://picsum.photos/200?random=16" alt="...">
+                    <div class="card-body py-3 pb-0">
+                        <b class="">200 Likes</b>
+                        <p class="text-wrap fw-light">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                    </div>
+                </div>
+                <div class="card mb-2">
+                    <div class="card-body pb-0 d-flex">
+                        <h6 class="card-text fw-bold"> EL UNIVERSO 1 </h6>
+                        <p class="text-end ms-auto me-3 fs-6 fw-light">12/19</p>
+                    </div>
+                    <img class="card-img-top img-fluid rounded-0" src="https://picsum.photos/200?random=17" alt="...">
+                    <div class="card-body py-3 pb-0">
+                        <b class="">200 Likes</b>
+                        <p class="text-wrap fw-light">Some quick example text to build on the card title and make up the
+                            bulk of the card's content.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
